@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* Font Variables */
+$base-font-family: Avenir-Next-Pro-LT;
+$code-font-family: "Menlo";
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default; 
+
+$project-box-gap: 4vw;
+
+@import
+"base.scss",
+"typography.scss",
+"colors.scss",
+"layout.scss";
+
