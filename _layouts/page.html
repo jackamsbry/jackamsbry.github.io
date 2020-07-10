@@ -1,0 +1,16 @@
+---
+layout: "default"
+---
+<div class="page-grid">
+    <div class="content">
+        <h2>
+            {{ page.title }}
+        </h2>
+        {% if page.title=="about" %}
+            <img class="profile-image" src="/assets/img/jack-amsbry.jpg">
+        {% endif %}
+        
+        {{content}}
+    </div>
+</div>
+
