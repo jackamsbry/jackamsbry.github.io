@@ -2,7 +2,7 @@
 
 body{
     font-family: Avenir-Next-Pro-LT;
-    background-color: $bg-color-light;
+    background-color: $highlight-color2;
 }
 /* Site Header */
 .site-header {
@@ -75,18 +75,10 @@ body{
         height: 140vh;
         width: inherit;
         display: flex;
-        background-color: $highlight-color2;
         justify-content: center;
-        #container {
-            background-color: $highlight-color3;
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            padding: 5vh;
-            z-index: 0;
-        }
+        
         .bg-image {
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             bottom: 0;
@@ -97,7 +89,7 @@ body{
             background-size: cover;
             margin: auto;
             overflow: auto;
-            opacity: 0.7;
+            z-index: -1;
 
         }
         
@@ -249,6 +241,7 @@ body{
     display: grid;
     grid-template-rows: auto auto 5vh;
     min-height: 15vh;
+    z-index: 1;
     .footer-big-links {
         display: flex;
         justify-content: center;
