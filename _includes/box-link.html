@@ -1,0 +1,11 @@
+<div class="project-box">
+    {%- if project.image -%}
+            <img src="../assets/img/{{project.image}}">
+            {%- assign tag = "image" -%}
+        {% else %}
+            {%- assign tag = "no-img" -%}       
+        {%- endif -%}
+    <a href="/{{project.categories[0]}}/{{project.categories[1]}}/{{project.title}}">
+            <h3 id={{tag}}> {{project.title}} </h3>
+    </a>
+</div>

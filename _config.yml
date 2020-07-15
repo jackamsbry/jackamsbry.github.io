@@ -34,7 +34,11 @@ plugins:
   - jekyll-feed
 
 #Collections
-
+collections: 
+  projects:
+   output: true
+   sort-by: order
+        
 
 # Exclude from processing.
 exclude:

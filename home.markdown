@@ -1,5 +1,5 @@
 ---
 layout: home
-title: 'home'
-permalink: "/index"
+title: "home"
+permalink: /index
 ---

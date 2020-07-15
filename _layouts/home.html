@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: default
 ---
 {% include welcome-screen.html %}
 <div class="home-projects">
@@ -7,41 +7,25 @@ layout: "default"
         <h2 id="current-projects">Current Projects Showcase</h2>
     </div>
     <div class="current-projects">
-        <div class="project-box">
-            <a class="img-link" href="">
-
-            </a>
-        </div>
-        <div class="project-box">
-            <a class="img-link" href="">
-
-            </a>
-        </div>
-        <div class="project-box">
-            <a class="img-link" href="">
-
-            </a>
-        </div>
+        {%- for project in site.projects -%}
+            {% if project.type=='showcase' and categories contains 'current' %}
+                <div class="project-box">
+                    <a class="img-link" href="/projects/{{project.title}}">
+                        <img src="./assets/img/{{project.image}}">
+                    </a>
+                </div>
+            {% endif %}
+        {%- endfor -%}        
     </div>
     <div class="container2">
         <h2 id="past-projects">Past Projects Showcase</h2>
     </div>
     <div class="past-projects">
-        <div class="project-box">
-            <a class="img-link" href="">
-
-            </a>
-        </div>
-        <div class="project-box">
-            <a class="img-link" href="">
-
-            </a>
-        </div>
-        <div class="project-box">
-            <a class="img-link" href="">
-
-            </a>
-        </div>
+        {%- for project in site.projects -%}
+            {% if project.type=='showcase' and project.categories contains 'past' %}
+                {%- include box-link.html -%}
+            {% endif %}
+        {%- endfor -%}
     </div>
 
 </div>

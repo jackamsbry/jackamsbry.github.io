@@ -72,7 +72,7 @@ body{
 
     /* Welcome Screen (Only appears on home page) */
     .welcome-screen {
-        height: 140vh;
+        height: 120vh;
         width: inherit;
         display: flex;
         justify-content: center;
@@ -95,7 +95,7 @@ body{
         
         .centered-text {
             position: absolute;
-            top: 15%;
+            top: 20%;
             width: inherit;
             text-align: center;
         }
@@ -147,20 +147,6 @@ body{
             justify-content: space-around;
             padding-bottom: 5vh;
             height: auto;
-            
-            .project-box {
-                height: 20vw;
-                width: 20vw;
-                background-color: $bg-color-light;
-                transform: scale(1);
-                transition-duration: 500ms;
-                margin: 3vh 0 3vh 0;
-            }
-            
-            :hover {
-                transform: scale(1.15);
-                transition-duration: 500ms;
-            }
         }
     
         .past-projects {
@@ -174,42 +160,77 @@ body{
             justify-content: space-around;
             padding-bottom: 5vh;
             height: auto;
-
-            .project-box {
-                height: 20vw;
-                width: 20vw;
-                background-color: $bg-color-light;
-                transform: scale(1);
-                transition-duration: 500ms;
-                margin: 3vh 0 3vh 0;
-            }
-            :hover {
-                transform: scale(1.15);
-                transition-duration: 500ms;
-            }
         }
+    }
+    .project-box {
+        height: 30vh;
+        width: 30vh;
+        background-color: $bg-color-light;
+        transform: scale(1);
+        transition-duration: 500ms;
+        margin: 3vh 0 3vh 0;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        a {
+            text-decoration: none;
+            width: 100%;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            bottom: 0%;
+            z-index: 2;
+            display: flex;
+        }
+        h3 {
+            text-transform: capitalize;
+            text-decoration: none;
+            color: $text-color-light; 
+            font-size: 175%;
+            
+            text-align: center;
+            width: 100%;
+            justify-self: center;
+            height: 1em;
+            margin: auto;
+        }
+        #no-img {
+            color: $text-color-dark; 
+        }
+        #image {
+            text-shadow: 2px 2px 10px black;
+        }
+
+        img {
+            max-width: 30vh;
+            min-width: 100%;
+            z-index: 1;
+            
+        }
+    }
+    .project-box:hover {
+        transform: scale(1.15);
+        transition-duration: 500ms;
     }
 
     .page-grid {
         display: grid;
         grid-template-columns: 10% 1fr 10%;
-        background-color: $highlight-color1;
+        background-color: $bg-color-black;
         min-height: 82.8vh;
 
         .content {
             grid-column: 2;
             background-color: $bg-color-black;
+            padding-top: 15vh;
+        }
+        h2 {
+            text-transform: capitalize;
+        }
+        #about {
             display: grid;
             grid-template: 10vh auto auto / 55% 45% ;
-            padding-top: 15vh;
 
-            h2 {
-                text-transform: capitalize;
-                margin: 5vh 10vw 2vh 10vw;
-                width: 20%;
-                
-            }
-            
             .profile-image {
                 grid-row: 1;
                 grid-column: 2;
@@ -220,17 +241,52 @@ body{
                 border-width: 3px;
                 border-style: solid;
                 border-color: $highlight-color3;
-              
-               
             }
-            
+            h2 {
+                margin: 5vh 5vw 2vh 10vw;
+                width: 25%;
+            }
+            .content-wrapper {
+                grid-row: 2;
+                grid-column: 1;
+            }            
             p {
                 margin-left: 10vw;
                 position: relative;
-                grid-row: 2;
-                grid-column: 1;
-                
             }
+        }
+
+        #centered {
+            display: grid;
+            grid-template-rows: 25vh auto;
+            .content-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .projects-wrapper {
+        display: grid;
+        grid-template-rows: 10vh auto 10vh auto;
+        h2 {
+            justify-self: center;
+            align-self: center;
+            
+        }
+        .current-projects {
+            grid-row: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .past-projects {
+            grid-row: 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
     }
 }
