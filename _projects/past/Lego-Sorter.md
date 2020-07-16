@@ -1,6 +1,6 @@
 ---
 layout: past-project
-title: Electroharp-"Imberchord"
+title: lego sorter
 categories: projects past
 permalink: /:categories/:title
 order: 6

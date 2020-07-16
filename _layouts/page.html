@@ -3,9 +3,11 @@ layout: "default"
 ---
 <div class="page-grid">
     <div class="content" id="{{page.type}}">
-        <h1>
-            {{ page.title }}
-        </h1>
+        <div class="title-wrapper">
+            <h1>
+                {{ page.title }}
+            </h1>
+        </div>
         {% if page.title=="about me" %}
             <img class="profile-image" src="/assets/img/jack-amsbry.jpg" alt="Photo of Jack Amsbry">
         {% endif %}

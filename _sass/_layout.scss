@@ -202,8 +202,8 @@ body{
         }
 
         img {
-            max-width: 30vh;
-            min-width: 100%;
+            width: 100%;
+            object-fit: cover;
             z-index: 1;
             
         }
@@ -266,8 +266,8 @@ body{
             }
             h1{
                 text-align: center;
-                top: 0%;
-                bottom: 0%;
+                bottom: 50%;
+                height: 1em;
             }
         }
     }
