@@ -8,12 +8,8 @@ layout: default
     </div>
     <div class="current-projects">
         {%- for project in site.projects -%}
-            {% if project.type=='showcase' and categories contains 'current' %}
-                <div class="project-box">
-                    <a class="img-link" href="/projects/{{project.title}}">
-                        <img src="./assets/img/{{project.image}}">
-                    </a>
-                </div>
+            {% if project.type=='showcase' and project.categories contains 'current' %}
+                {%- include box-link.html -%}
             {% endif %}
         {%- endfor -%}        
     </div>
