@@ -3,6 +3,7 @@ layout: past-project
 title: Images for the Blind
 categories: projects past
 order: 5
+class: project
 image: images-4-blind.jpg
 alt: Image of the Joystick and Sensor robots
 ---

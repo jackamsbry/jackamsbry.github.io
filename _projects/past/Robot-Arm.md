@@ -3,6 +3,7 @@ layout: past-project
 title: robot arm 4dof
 categories: projects past
 order: 8
+class: project
 image: robot-arm.jpg
 alt: Image of the LEGO robot arm
 video: robot-arm.mp4

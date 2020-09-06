@@ -3,6 +3,7 @@ layout: past-project
 title: Line Follower
 categories: projects past
 order: 4
+class: project
 image: line-follower.png
 alt: Still of the robot following a tape line
 ---

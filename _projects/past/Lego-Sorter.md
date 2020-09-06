@@ -3,6 +3,7 @@ layout: past-project
 title: lego sorter
 categories: projects past
 order: 6
+class: project
 image: lego-sorter.png
 alt: Image of the conveyor belt and hopper system
 video: lego-sorter.mp4

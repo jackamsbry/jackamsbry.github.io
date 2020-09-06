@@ -3,6 +3,7 @@ layout: past-project
 title: Grab'N'Go
 categories: projects past
 order: 3
+class: project
 image: grab-n-go.png
 alt: Image of the Grab'N'Go robot
 ---

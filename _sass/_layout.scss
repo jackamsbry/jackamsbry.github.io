@@ -273,8 +273,33 @@ body{
                 height: 1em;
             }
         }
-    }
+        /* Individual Project Page Styling */
+        #project {
+            display: grid;
+            grid-template-rows: 10vh auto;
+            
+            .content-wrapper {
+                display: grid;
+                grid-template: auto auto / 50% 50%;
+                
+            }
+            .text-wrapper {
+                grid-row: 1;
+                grid-column: 1;
+            }
+            .project-img {
+                grid-row: 1;
+                grid-column: 2;
+                padding-left: 2vw;
+                overflow: hidden;
+                img {
+                    max-height: 400px;
+                }
+            }
 
+        }
+    }
+/* Projects Landing Page Styling */
     .projects-wrapper {
         display: grid;
         grid-template-rows: 5vh auto 5vh auto;

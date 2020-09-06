@@ -3,6 +3,7 @@ layout: past-project
 title: ball thrower
 categories: projects past
 order: 7
+class: project
 image: ball-thrower.png
 alt: Still of the pendulum robot before a shot
 video: ball-thrower.mp4

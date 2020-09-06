@@ -3,6 +3,7 @@ layout: past-project
 title: electroharp
 categories: projects past
 order: 1
+class: project
 image: electroharp.jpg
 alt: A Photo of the Electroharp
 type: showcase
