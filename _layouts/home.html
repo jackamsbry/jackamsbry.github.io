@@ -1,27 +1,23 @@
 ---
 layout: default
+linked_js:
+- https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js
+custom_js: 
+- home
 ---
 {% include welcome-screen.html %}
 <div class="home-projects">
     <div class="container1">
-        <h2 id="current-projects">Current Projects Showcase</h2>
+        <h2 id="project-showcase">Projects Showcase</h2>
     </div>
-    <div class="current-projects">
+    <div class="project-showcase">
         {%- for project in site.projects -%}
-            {% if project.type=='showcase' and project.categories contains 'current' %}
-                {%- include box-link.html -%}
+            {% if project.type=='showcase'  %}
+                {% capture modal_id %}{%- increment id_num -%}{% endcapture %}
+                {%- include modal-box.html -%}
+                {%- include project-modal.html -%}
             {% endif %}
         {%- endfor -%}        
     </div>
-    <div class="container2">
-        <h2 id="past-projects">Past Projects Showcase</h2>
-    </div>
-    <div class="past-projects">
-        {%- for project in site.projects -%}
-            {% if project.type=='showcase' and project.categories contains 'past' %}
-                {%- include box-link.html -%}
-            {% endif %}
-        {%- endfor -%}
-    </div>
-
+    
 </div>

@@ -2,3 +2,15 @@
 layout: page
 type: centered
 ---
+<div class="project-img">
+    <img src="../assets/img/{{page.image}}" alt="{{page.alt}}">
+</div>
+<div class="text-wrapper">
+    {{ content }}
+</div>
+<div class="video-wrapper">
+    <video class="project-video" src="..assets/video/{{ page.video }}" autoplay preload> Your browser does not support HTML video </video>
+    <p>
+        {{page.video-des}}
+    </p>
+</div>
