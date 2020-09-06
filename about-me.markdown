@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "about me"
-type: about
+class: about
 permalink: /about-me
 ---
 
