@@ -36,7 +36,7 @@ plugins:
 collections: 
   projects:
    output: true
-   permalink: /:categories/:title
+   permalink: /:categories/:slug
    sort_by: order
         
 
