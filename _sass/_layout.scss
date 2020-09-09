@@ -296,7 +296,10 @@ body{
                     max-height: 400px;
                 }
             }
-
+            .video-wrapper {
+                grid-row: 2;
+                grid-column: 1 2;
+            }
         }
     }
 /* Projects Landing Page Styling */
