@@ -17,4 +17,8 @@ I began by learning how to set up and use a headless raspberry pi. I had never u
 <br><br>
 With the robot built and the inverse kinematics solved, finally it was time to sequence the movement of the legs. The motion of each leg was hard-coded where the tip of each leg would follow a bezier curve path as I learned this could help with slipping. The legs would then be sequenced to produce a specific gait. There are 3 main gaits used for hexapod motion sometimes seen as the tripod, ripple, and wave gaits. I decided to focus on the most common gait, the tripod gait, but also to build my code in such a way that it would easily adapt to other gaits. Unfortunately at this point in the project, all students were sent home due to COVID-19 and I was forced to finish the project at home with significant lack of tools. This distruption greatly decreased my motivation on the project, but I at least wanted to get the robot walking with the tripod gait, and eventually, after much trial and error, the robot was on the move! At this point I was not as excited about this project, so once I acheived motion, I just stopped working on it.
 <br><br>
+<p align="center">
+<img src="/assets/gif/hexapod.gif">
+</p>
+<br><br>
 There were many issues with the robot, mainly the python code was not running fast enough to give good control of the robot so I plan on using a Teensy microcontroller on version 2. I want to simplify the electronics with a custom PCB and either better servo motors or dc motors. I do plan on reviving the project at some point and I have already designed version 2 of the robot with a full enclosure and two robot arms. With no current access to 3D printers and other competing priorities, this project is on hold for now.
