@@ -5,7 +5,6 @@ categories: projects
 order: 1
 image: hexapod.jpg
 alt: A photo of the unfinished version 1 hexapod.
-video: hexapod.mp4
 class: project
 type: showcase
 --- 
