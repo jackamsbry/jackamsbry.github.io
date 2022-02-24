@@ -13,9 +13,7 @@ custom_js:
     <div class="project-showcase">
         {%- for project in site.projects -%}
             {% if project.type=='showcase'  %}
-                {% capture modal_id %}{%- increment id_num -%}{% endcapture %}
-                {%- include modal-box.html -%}
-                {%- include project-modal.html -%}
+                {%- include box-link.html -%}
             {% endif %}
         {%- endfor -%}        
     </div>
