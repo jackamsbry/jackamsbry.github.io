@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+<div id="project-content">
+    <div id="project-contents">
+        <img class="project-header-img" src="/assets/img/{{page.image}}">
+        <div id="project-text">
+            {{content}}
+        </div>
+    </div>
+    {% if page.video %}
+    <video class="project-video" src="/assets/video/{{page.video}}" autoplay loop muted></video>
+    {% endif %}
+</div>
