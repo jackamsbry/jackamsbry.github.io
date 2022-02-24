@@ -1,24 +1,13 @@
 ---
 layout: page
-title: projects
+title: all projects
 class: centered
 permalink: /projects
 ---
 <div class="projects-wrapper">
-    <h2>Current Projects</h2>
-    <div class="current-projects">
+    <div class="all-projects">
         {%- for project in site.projects -%}
-            {% if project.categories contains 'current' %}
-                {%- include box-link.html -%}
-            {% endif %}
-        {%- endfor -%}
-    </div>
-    <h2>Past Projects</h2>
-    <div class="past-projects">
-        {%- for project in site.projects -%}
-            {% if project.categories contains 'past' %}
-                {%- include box-link.html -%}
-            {% endif %}
+            {%- include box-link.html -%}
         {%- endfor -%}
     </div>
 </div>
