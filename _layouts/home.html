@@ -15,7 +15,12 @@ custom_js:
             {% if project.type=='showcase'  %}
                 {%- include box-link.html -%}
             {% endif %}
-        {%- endfor -%}        
+        {%- endfor -%}  
+        <div class="project-box">
+            <a href="/projects">
+                <h3 id="no-img">See more...</h3>
+            </a>
+        </div>      
     </div>
     
 </div>
