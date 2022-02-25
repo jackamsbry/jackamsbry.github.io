@@ -21,12 +21,13 @@ b.	The case of the instrument was originally designed to act as an acoustic radi
 <br><br>
 ## Electrical Design
 <br>
-There are two printed circuit board designs in the Electroharp. The first board has a voltage regulation IC, a MIDI input circuit and a logic level converter. The second board is the MOSFET control board. 
-a. 	The main control circuit takes MIDI data from a 25-key MIDI controller as one input and 9V as the other input. The MIDI controller and the microcontroller are electrically isolated to pre-vent voltage surges from damaging the microcontroller. The 9V input is stepped down using a linear voltage regulator to 5V because the microcontroller and MIDI controller take 5V as inputs.   
+There are two printed circuit board designs in the Electroharp. The first board has a voltage regulation IC, a MIDI input circuit and a logic level converter. The second board is the MOSFET control board. <br><br>
+a. 	The main control circuit takes MIDI data from a 25-key MIDI controller as one input and 9V as the other input. The MIDI controller and the microcontroller are electrically isolated to pre-vent voltage surges from damaging the microcontroller. The 9V input is stepped down using a linear voltage regulator to 5V because the microcontroller and MIDI controller take 5V as inputs.
+<br><br>
 b.	The MOSFET circuit uses a set of five MOSFETs as switches to control DC motor speed. A 10 kOhm resistor is used as a pull-down resistor to have the default logic state of the MOSFET be low. 
 <br><br>
 ## Software
 <br>
 The software for the Electroharp is surprisingly simple, yet effective. The code implements an open source Arduino library to interpret the MIDI data which is sent over serial communication. The interpreted data gives the specific note played and the force at which the note is played. The speed of the motor is calculated using the force data where the speed of the motors is directly proportional to the force applied. The outputs are sent to different PWM output channels on the microcontroller using a switch statement. 
 <br><br>
-Pictured below is the completed instrument. The Electroharp sounds unlike any other instrument I have heard before. Peers have said that it sounds like “a musical chainsaw” and “if fairy lights had a sound”. In the future, more improvements can be made to the instrument to increase playability and musicial expression capabilities. Some damping system should also be added to dampen the strings when they are not being played similar to the piano damping system. 
+The Electroharp sounds unlike any other instrument I have heard before. Peers have said that it sounds like “a musical chainsaw” and “if fairy lights had a sound”. In the future, more improvements can be made to the instrument to increase playability and musicial expression capabilities. Some damping system should also be added to dampen the strings when they are not being played similar to the piano damping system. 
